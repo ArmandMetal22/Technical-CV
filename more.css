@@ -1,0 +1,31 @@
+body{
+    padding: 0;
+    margin: 0px;
+    font-family: Arial, Helvetica;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    background-image:url(red.jpg);
+}
+
+.top-nav{
+    background-color: dimgrey;
+    overflow: hidden;
+}
+.top-nav a{
+    color:ghostwhite;
+    display: block;
+    padding: 14px 16px;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+}
+
+.active{
+    background-color:darkred;
+}
+
+.top-nav a:hover:not(.active){
+    background-color:#ef504e;
+}

@@ -54,7 +54,7 @@ h3{
    }
    
    .blurred-box{
-     position: fixed;
+     position: absolute;
      width: 275px;
      height: 445px;
      top: calc(50% - 175px);
