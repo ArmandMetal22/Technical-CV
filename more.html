@@ -4,15 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="more.css">
-    <title>Document</title>
+    <title>Landing Page</title>
 </head>
 <body>
-    <div class="top-nav">
-        <a class = "active" href="index.html">HOME</a>
-        <a href="">ABOUT</a>
-        <a href="">EXPERIENCE</a>
-        <a href="">PROJECTS</a>
-        <a class = "right" href="">CONTACT</a>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a class = "active" href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#project">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#return">RETURN</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+            <h1>Welcome to my Technical CV.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, expedita accusamus. Tempora, ducimus. Quidem, quis!</p>
+        </section>
+        <section id="about">
+            <h1>ABOUT</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, expedita accusamus. Tempora, ducimus. Quidem, quis!</p>
+        </section>
+        <section id="experience">
+            <h1>EXPERIENCE</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, expedita accusamus. Tempora, ducimus. Quidem, quis!</p>
+        </section>
+        <section id="project">
+            <h1>PROJECTS</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, expedita accusamus. Tempora, ducimus. Quidem, quis!</p>
+        </section>
+        <section id="contact">
+            <h1>CONTACT</h1>
+            <div class="container">  
+                <div class="contactinfo">
+                    <div>
+                        <h2>Contact Info</h2>
+                        <ul class = "info">
+                            <li>
+                                <span><img src ="location.png"></span>
+                                <span>304 Sonneblom Road, Doornpoort <br>
+                                Pretoria, Gauteng <br>
+                                0017</span>
+                            </li>
+                            <li>
+                                <span><img src ="mail.png"></span>
+                                <span>armandmet15@mweb.co.za</span>
+                            </li>
+                            <li>
+                                <span><img src ="cell.png"></span>
+                                <span>+27 (72) 361 4704</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="sci">
+                        <li><a href="#" ><img src = "1.png"></a></li>
+                        <li><a href="#"><img src = "2.png"></a></li>
+                        <li><a href="#"><img src = "3.png"></a></li>
+                        <li><a href="#"><img src = "4.png"></a></li>
+                     <li><a href="#"><img src = "5.png"></a></li>
+                    </ul>
+                </div>   
+                <div class="contactform">
+                    <h2>Send a Message</h2>
+                    <div class="formbox">
+                        <div class="input-box w50">
+                            <input type="text" name="" required>
+                            <span>First Name:</span>
+                        </div>
+                        <div class="input-box w50">
+                            <input type="text" name="" required>
+                            <span>Last Name:</span>
+                        </div>
+                        <div class="input-box w50">
+                            <input type="text" name="" required>
+                            <span>Email Address: </span>
+                        </div>
+                        <div class="input-box w50">
+                            <input type="text" name="" required>
+                            <span>Mobile Number:</span>
+                        </div>
+                        <div class="input-box w100">
+                            <textarea name="" required></textarea>
+                            <span>Message:</span>
+                        </div>
+                        <div class="input-box w100">
+                            <input type="submit" value="Send">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="return">
+            <h1>RETURN</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, expedita accusamus. Tempora, ducimus. Quidem, quis!</p>
+            <a href="index.html">Click here to return.</a>
+        </section>
     </div>
+   
 </body>
 </html>

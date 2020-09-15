@@ -1,19 +1,40 @@
-body{
+
+*{
+    margin: 0;
     padding: 0;
-    margin: 0px;
-    font-family: Arial, Helvetica;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: top;
-    background-image:url(red.jpg);
 }
 
-.top-nav{
-    background-color: dimgrey;
+body{
+    font-family: Arial, Helvetica;
+    background: firebrick;
+    color: #fff;
+    line-height: 1.6;
+    height: 100vh;
     overflow: hidden;
 }
-.top-nav a{
+
+.container{ 
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+
+
+.navbar{
+    background-color: dimgrey;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 53px;
+}
+.navbar ul li a{
     color:ghostwhite;
     display: block;
     padding: 14px 16px;
@@ -22,10 +43,270 @@ body{
     text-align: center;
 }
 
+.navbar ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: left;
+
+}
+
 .active{
     background-color:darkred;
 }
 
-.top-nav a:hover:not(.active){
+.navbar a:hover:not(.active){
     background-color:#ef504e;
 }
+
+section {
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: none;
+}
+
+
+/* HOME section */
+section#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-image:url(red.jpg);
+   
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top;
+}
+section#home h1{
+    
+}
+
+section#home p{
+    font-size: 1.5rem;
+}
+/* ABOUT section */
+section#about {
+    background-color:firebrick
+  }
+/* EXPERIENCE section */
+section#experience {
+    background-color:brown
+  }
+/* PROJECT section */
+section#project {
+    background-color:indianred
+  }
+/* CONTACT section */
+section#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: sticky;
+    display:flex;
+    background-color:salmon;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  
+}
+section#contact h1{
+    font-size: 4rem;
+}
+
+section#contact::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background: salmon;
+} 
+section#contact .container{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+}
+section#contact .container .contactinfo{  
+    margin-top: 35px;
+    margin-left: 15px;
+    width: 350px;
+    height: 500px;
+    background: firebrick;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgba(0,0,0,1)
+}
+
+section#contact .container .contactinfo h2{ 
+    color: ghostwhite;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 100px;
+}
+section#contact .container .contactinfo .info{
+    position: relative;
+    margin: 20px 0;
+}
+section#contact .container .contactinfo .info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+section#contact .container .contactinfo .info li span:nth-child(1){
+    width: 30px;
+    min-width: 30px;
+}
+section#contact .container .contactinfo .info li span:nth-child(1) img{
+    max-width: 100%;
+    filter: invert(1);
+    opacity: 0.5;
+    font-weight: 500;
+    
+}
+
+section#contact .container .contactinfo .info li span:nth-child(2){
+    color: ghostwhite;
+    margin-left: 10px;
+    font-weight: 300;
+    opacity: 0.5;
+   
+}
+section#contact .container .contactinfo .info li:hover span:nth-child(1) img,
+section#contact .container .contactinfo .info li:hover span:nth-child(2){
+    opacity: 1;
+    font-weight: 500;  
+}
+section#contact .container .contactinfo .sci{
+    position: relative; 
+    display: flex;
+}
+section#contact .container .contactinfo .sci li{
+    list-style: none;
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+section#contact .container .contactinfo .sci li a{
+    text-decoration: none;
+}
+section#contact .container .contactinfo .sci li a img{
+    filter: invert(1);
+    opacity: 0.5;
+}
+section#contact .container .contactinfo .sci li:hover img{ 
+    opacity: 1;
+}
+section#contact .container .contactform{
+    /* position: absolute;
+    padding: 70px 50px;
+    background: crimson;
+    margin-left: 380px;
+    margin-top: 100px;
+    box-shadow: 0 50px 50px rgba(0,0,0,1); */
+    position: absolute;
+    padding: 70px 50px;
+    background: crimson;
+    margin-left: 150px;
+    padding-left: 250px;
+    width: calc(100% - 750px);
+    height: 50%;
+    box-shadow: 0 50px 50px rgba(0,0,0,1);
+    overflow: hidden;     
+}
+section#contact .container .contactform h2{
+    color: ghostwhite;
+    font-size: 24px;
+    font-weight: 500px;
+}
+section#contact .container .contactform .formbox{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+section#contact .container .contactform .formbox .input-box{
+    position: relative;
+    margin: 0 0 35px 0;
+}
+section#contact .container .contactform .formbox .input-box.w50{
+    width: 47%;
+}
+section#contact .container .contactform .formbox .input-box.w100{
+    width: 100%;
+}
+section#contact .container .contactform .formbox .input-box input,
+section#contact .container .contactform .formbox .input-box textarea{
+    width: 50%;
+    padding: 5px 0;
+    resize: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+}
+section#contact .container .contactform .formbox .input-box textarea {
+    min-height: 120px;
+}
+section#contact .container .contactform .formbox .input-box span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: ghostwhite;
+    transition: 0.5s;
+    pointer-events: none;
+}
+section#contact .container .contactform .formbox .input-box input[type="submit"]{
+    position: relative;
+    cursor: pointer;
+    background:salmon;
+    color: ghostwhite;
+    border:ghostwhite;
+    max-width: 150px;
+    padding: 12px;
+}
+
+section#contact .container .contactform .formbox .input-box input[type="submit"]:hover{
+    background: gold;
+}
+
+
+ /*RETURN section */
+section#return{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color:peachpuff;
+  }
+
+
+
+
+
+  
+
+  
+ 
+  
+ 
+
+  
+  
