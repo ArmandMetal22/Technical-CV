@@ -156,6 +156,25 @@ section#skills{
 section#experience {
     background-color: indianred;
   }
+
+  section#experience h1{
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+
+section#experience .container {
+    display: grid;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0;
+    margin-top: 0;
+}
 /* PROJECT section */
 section#project {
 
