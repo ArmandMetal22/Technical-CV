@@ -406,13 +406,37 @@ section#contact .container .contactform .formbox .input-box input[type="submit"]
 
  /*RETURN section */
 section#return{
+ 
+    background-color:lightpink;
+  }
+
+section#return h1{
+    font-size: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color:lightpink;
-  }
+}
+
+section#return p{
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section#return a{
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 
 
 
