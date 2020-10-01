@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 body{
@@ -151,7 +152,155 @@ section#about .container .Quotes{
 /* SKILLS section */
 section#skills{
     background-color: brown;
+    list-style: none;
 }
+section#skills h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.Languages{
+    width: 500px;
+    color: ghostwhite;
+    float: left;
+}
+.Software{
+    width: 500px;
+    color: ghostwhite;
+    float: left;
+    margin-left: 100px;
+}
+.Other{
+    width: 500px;
+    color: ghostwhite;
+    float: left;
+    margin-left: 100px;
+}
+section#skills .bar{
+    background: ghostwhite;
+    display: block;
+    height: 20px;
+    border: 1.5px solid rgba(0,0,0,1);
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 0 10px gold;
+}
+
+.bar span{
+    height: 25px;
+    background: gold;
+    float: left;
+    color: black;
+    font-weight: bold;
+}
+
+.Csharp{
+    width: 90%;
+}
+
+.SQL{
+    width: 90%;
+}
+
+.Python{
+    width: 80%;
+}
+
+.HTML5{
+    width: 70%;
+}
+
+.JS{
+    width: 70%;
+}
+
+.CSS{
+    width: 70%;
+}
+
+.Java{
+    width: 50%;
+}
+.Cpp{
+    width: 50%;
+}
+
+.Vue{
+    width: 45%;
+}
+/* SOFTWARE */
+.VS{
+    width: 90%;
+}
+.VSC{
+    width: 90%;
+}
+.GH{
+    width: 60%;
+}
+.ATM{
+    width: 70%;
+}
+
+.SQLS{
+    width: 90%;
+}
+
+.UI{
+    width: 75%;
+}
+
+.PM{
+    width: 80%;
+}
+
+.DM{
+    width: 70%;
+}
+
+.DB{
+    width: 70%;
+}
+
+.IS{
+    width: 70%;
+}
+
+.VE{
+    width: 75%;
+}
+
+.RS{
+    width: 90%;
+}
+
+.WD{
+    width: 60%;
+}
+
+.AD{
+    width: 60%;
+}
+
+.FL{
+    width: 60%;
+}
+
+.OBS{   
+    width: 60%;
+}
+
+.AP{
+    width: 60%;
+}
+
+
+
+
 /* EXPERIENCE section */
 section#experience {
     background-color: indianred;
