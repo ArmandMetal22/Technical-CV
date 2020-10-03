@@ -373,6 +373,10 @@ background-color: sandybrown;
     text-align: center;
     margin: 100px 330px;  
 }
+
+.part1 img:hover{
+    background-image: none;
+}
 /* CONTACT section */
 section#contact {
     display: flex;
